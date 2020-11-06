@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let 99balloons = ""; // <-- Cannot start with numbers!
+        let x;
+        const _ = "Strange, huh?";  // We can use one-char variables and we can use $ and _
+        // Mnemonics: parameters vs arguments
+        // (p)arameters with (p) as in (p)laceholder
+        function $( numA, numB ){
+            const sum = numA + numB; const _ = "1"; 
+            // alert(_); // Will look first in the function scope for _
+            return sum;
+            // If return VALUE is omitted or we have just a return;
+            // JS automatically places: return undefined;
+        }
+        $( 5, 5 ); // (a)rguments with (a) as in (a)ctual values
+        const sum = $( 0, 5 );
+        $( 3 );
+
+        // Functions are values! With a special capability of being: executable
+        // Arrays can contain all sorts of values, including Functions!
+        //                                  0 1 2
+        const list = [ true, 42, "String", [1,2,33], $ ];
+        //              0     1      2        3     4
+        // To get 33:
+        list[3][2];
+        function sub( numA, numB ){
+            return numA - numB;
+        }
+        const mathFunctions = [ 
+            sub, $, function mul( numA, numB ){
+                return numA * numB;
+            }
+        ];
+        // Adding elements to an Array
+        const students = [ "Aliki", "Rami" ];
+        console.log( "students length", students.length );
+        // Add to the start of an Array:
+        students.unshift( "Kiuri", "Celina" );
+        // Remove the first element from an Array
+        console.log( "students length", students.length );
+        students.shift();
+        students.shift();
+        console.log( "students length", students.length );
+
+        // Add to the end of an Array
+        students.push( "Kiuri", "Celina", "Kostas" );
+        console.log( students, students.length );
+        // Remove from the end of an Array
+        students.pop();
+        // (1) PRACTICE:
+        // We have: ["Aliki", "Rami", "Kiuri", "Celina"]
+        // We want: ["Aliki", "Celina", "Rami", "Kiuri", ]
+
+        // First try:
+        // students.pop();
+        // students.pop();
+        // students.pop();
+        // ["Aliki"];
+        // students.push("Celina","Rami","Kiuri");
+
+        // Being creative...
+        // students.push( students.pop(), students.pop(), students.pop() );
+
+        // To be continued...
+
+        // CHALLENGE ACCEPTED (Vaso): Remove A, B, C, D, E
+        const big = [ 1, 2, 3, 4, 5, 6, 7, "A", "B", "C", "D", "E" ];
+        // Not efficient, especially with 1,000,000 elements to remove
+        // big.pop();
+        // big.pop();
+        // big.pop();
+        // big.pop();
+        // big.pop();
+
+        // LOOPS: Do something multiple times (for ... loop)
+        // for ( RULES FOR HOW MANY TIMES ){
+        //     CODE TO REPEAT;
+        // }
+        // for ( 1) INITIAL STATEMENT; 2) TEST; 3) RUN AFTER ITERATION )
+        // 1) Will run before loop, only once.
+        for ( let counter = 0; counter < 5; counter = counter + 1 ){
+            // ITERATION: Every time the code here gets executed
+            console.log( "iteration:", counter );
+            // counter = counter + 1;
+            big.pop();
+            // counter = big.length - 5; // ? to be investigated...
+        }
+        console.log( big );
+
+     // for ( let start = 1; start <= 10; start = start + 2 ){
+     // start = start + 2  <-- SAME AS -->  start += 2
+        for ( let start = 1; start <= 10; start += 2 ){
+            console.log( "start: ", start );
+        }
+        console.log("Phew, we're out of the loop!");
+
+    // Array Methods (or Functions)
+    console.clear();
+    const class12 = [ 
+        //                         START                END (Without this element)
+        // 0        1       2        3         4         5     
+        "Aliki", "Kiuri", "Saw", "Kostas", "Damian", "Kato Elvis" 
+    ];
+    const copy = class12.slice(); // IMPORTANT NOTE: NOT to be confused with splice()
+    const teachers = class12.slice( 3, 5 );
+    console.log( teachers );    // NEW ARRAY!
+    const moreTeachers = [ "Paulin" ];
+    const allTeachers = moreTeachers.concat( teachers ); // moreTeachers + teachers
+
+    // Create a new Array with just the students of Class 12: (slice,concat)
+    let students1 = class12.slice(0,3);
+    let students2 = class12.slice(5); // With a single arg, we go from 5, up to the end
+    // slice(0) === slice()
+    console.log( ">>>", students1.concat(students2) );
+
+    // Reverse an Array
+    const asc = [1,2,3,4,5];
+    const desc = asc.slice();
+    desc.reverse();
+    // asc.reverse(); //=> [5,4,3,2,1];
+    console.log( "asc:", asc);
+
+    // Short intro to Objects
+    console.clear();
+    const mathMethods = {
+        // KEY/PROPS   : VALUE
+        subtraction    : sub,
+        addition       : $,
+        // multiplication : function mul(a,b){ return a*b; } // Helps us in debugging
+        multiplication : function(a,b){ return a*b; } // Anonymous function
+    }; 
+    // subtraction, addition, multiplication are also known
+    // as the object's PROPERTIES
+    // mathMethods[0]
+    // -> 
+    // mathMethods['subtraction']
+    console.log( mathMethods['subtraction'](8,4) ); // Bracket notation for accessing object properties
+    console.log( mathMethods.addition(8,4) ); // Alternative syntax for accessing object properties: dot notation
+
+    const contacts = { "Kostas Minaidis": 123, rami: 456 }
+    contacts['Kostas Minaidis'];
+    contacts.rami;
+
+    const eng2de = {
+        hello: "Hallo",
+        world: "Welt",
+        "I am": "Ich bin"
+    }
+    console.log( eng2de.world );
+    console.log( eng2de["I am"] );
+
+    // String Methods and Properties
+    const name = "Kostas";
+    console.log( name.length ); // Number of characters in a string
+    console.log( name.toUpperCase() );
+    console.log( name.toLowerCase() );
+    console.log( name.replace( "o", "()") );
+    console.log( name.indexOf( "as" ) );
+    console.log( name[3] );
+    console.log( name.split("") );
+
+    // Split a String into an Array
+    const split = name.split("");
+    // Reverse the Array of characters
+    split.reverse();
+    console.log( split.join("") );  // Array -> String
+    console.log( split.join("-") );  // Array -> String
+
+    // (2) EXERCISE: 
+    // Get a new Array which contains the unique values of the Array
+    // Original Array: [17,28,57,357,75,20,57,20,357,653,17]
+    // We want:        [17,28,57,357,75,20,653]
+    </script>
+</body>
+</html>

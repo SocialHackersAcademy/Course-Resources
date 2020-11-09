@@ -1,6 +1,3 @@
-# Live-Sessions-Code
-Code and files from live sessions
-
 ## FRONT END WEB DEVELOPMENT COURSE
 
 ### LIVE SESSIONS

@@ -19,4 +19,6 @@ Code and files from live sessions
         <li><a href="/JavaScript/Array-and-String-Methods/exercise-01.js">Exercise 1: Re-arrange Array</a></li>
         <li><a href="/JavaScript/Array-and-String-Methods/exercise-02.js">Exercise 1: Unique array values</a></li>
     </ul>
+    <hr>
+    <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
 </details> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Quiz with Timer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: lightgray;
+        }
+        main {
+            max-width: 800px;
+            background: white;
+            margin: 0 auto;
+            padding: 50px;
+            box-shadow: 0 0 16px rgba(0,0,0,0.2);
+        }
+        textarea {
+            width: 50%;
+            height: 200px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: slateblue;
+            color: white;
+            border: none;
+        }
+        #timer {
+            padding: 10px 20px;
+            background: cadetblue;
+            font-size: 1rem;
+            margin-left: 10px;
+            color: white;
+            border: 1px solid cadetblue;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Ready to take the Quiz?</h1>
+        <p>Write a short essay about what motivated you to become a Web developer.</p>
+        <section>
+            <textarea id=""></textarea>
+        </section>
+        <button>Start the Quiz</button><span id="timer">(Minutes left)</span>
+    </main>
+
+    <!-- INSTRUCTIONS -->
+    <main style="margin-top:20px; background: #eee;">
+        <p>1) Use some JavaScript timing function (e.g., setInterval, setTimeout) to hold a timer for 20 minutes.</p>
+        <p>2) The timer should start when the user hits the <strong>Start the Quiz</strong> button and the minutes left should be diplayed in the span with id <strong>timer</strong>. The minutes left should get updated each minute so that the user knows how much time is left.</p>
+        <p>3) Once the timer reaches the end, the textarea should be disabled (search for the appropriate HTML attribute and how to add it via JS) so that the user can no longer write on it.</p>
+    </main>
+</body>
+
+</html>

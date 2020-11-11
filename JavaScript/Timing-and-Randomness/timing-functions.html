@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <script>
+      // setTimeout( FUNCTION_TO_RUN, AFTER_n_MS );
+      function update(){
+        document.getElementById("message").textContent = "Finished!";
+      }
+      // update();
+
+      function handleClick(){
+        console.log("Timer for 5' started...");
+        setTimeout( update, 5 * 1000 ); // 1000 * SECS * 60
+        setInterval( tick, 1000 );
+        // return update();
+        clearInterval( intervalID );
+        // clearTimeout( timeoutID );
+      }
+
+      // setInterval( FUNCTION_TO_RUN, EVERY_n_MS );
+      // setInterval( tick, 1000 );
+
+      counter = 0;
+      function tick(){
+        console.log("tick", ++counter);
+      }
+
+      const intervalID = setInterval( 
+        function(){ 
+          // console.log(Math.random()); 
+        }, 1000 
+      );
+      const currentDate = new Date();
+      console.log( currentDate.getFullYear() );
+      console.log( currentDate.getHours() );
+    </script>
+    <p>Exercise: print the time here -> 12:33:44 (h:m:s)</p>
+    <div id="message">About to start...</div>
+    <button onclick="handleClick();">Start Timer</button>
+  </body>
+</html>

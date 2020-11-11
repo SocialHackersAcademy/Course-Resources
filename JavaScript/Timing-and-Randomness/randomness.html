@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <script src="src/index.js"></script>
+    <script>
+      //console.clear();
+      const studentsArray = [
+        "kostas: teacher",
+        "kiuri: student",
+        "vaso:student",
+        "rami:student",
+        "patrick: student",
+        "nikos: student",
+        "alkis:student",
+        "cetin: student",
+        "Sawjet:student",
+        "celina: student",
+        "armando:student",
+        "aliki: student",
+        "Emmanuel: student"
+      ];
+      // console.log( studentsArray.length );
+
+      const students = {
+        // KEYS: VALUES
+        kostas: "teacher",
+        kiuri: "student",
+        vaso: "student",
+        rami: "student",
+        patrick: "student",
+        nikos: "student",
+        alkis: "student",
+        cetin: "student",
+        Sawjet: "student",
+        celina: "student",
+        armando: "student",
+        aliki: "student",
+        Emmanuel: "student"
+      };
+      console.log(students.length); // undefined
+      // Input -> Object -> Output -> Array of 'keys'
+      console.log(Object.keys(students));
+      console.log(Object.keys(students).length);
+      // console.log(  [ ARRAY ].length );
+      console.log(Object.values(students));
+      const studentNames = Object.keys(students);
+      console.log(studentNames[4]);
+      // innerHTML vs textContent?
+      // innerHTML -> we can use <tags>
+			// textContent -> Only text characters
+
+			function handleClick(){
+        let randomNumber = Math.random() * Object.keys(students).length;
+        randomNumber = Math.floor(randomNumber);
+        console.log( "randomNumber", randomNumber );
+        const luckyOne = studentNames[randomNumber]; // 4 -> Random Number: 0 ~ end of array
+				console.log( "handleClick", Math.random() );
+				document.getElementById("lucky").innerHTML = luckyOne;
+			}
+    </script>
+    <div id="app"></div>
+    <p>The lucky student is <span id="lucky">...?</span>!</p>
+    <button onclick="handleClick();">Pick lucky one!</button>
+  </body>
+</html>

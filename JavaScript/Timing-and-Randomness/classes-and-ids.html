@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and IDs in HTML</title>
+    <style>
+        student {
+            border: 1px solid;
+        }
+        
+        .male {
+            padding: 5px;
+        }
+        
+        .female {
+            margin: 20px;
+        }
+        
+        #kiuri,
+        #aliki {
+            background: orange;
+        }
+        
+        .greek.male {
+            background: tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Class and IDs</h2>
+    <p>What's the difference?</p>
+
+    <!-- Each class name is separated by a space -->
+    <teacher class="greek male lead_instructor head-of-education">Kostas</teacher>
+
+    <student class="male" id="kiuri">Kiuri</student>
+    <student class="greek female" id="aliki">Aliki</student>
+    <student class="male" id="kiuri">Manu</student>
+    <student class="greek female">Stella</student>
+
+</body>
+
+</html>

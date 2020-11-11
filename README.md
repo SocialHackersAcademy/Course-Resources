@@ -55,6 +55,8 @@
     <h4>Exercises</h4>
     <ul>
         <li><a href="/JavaScript/Timing-and-Randomness/exercise-01-quiz-timer.html">Exercise #1: Quiz with Timer</a></li>
+        <li>Create a web page that has a Pomodoro timer.</a></li>
+        <li>Create a Countdown timer.</a></li>
     </ul>
     <hr>
     <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>

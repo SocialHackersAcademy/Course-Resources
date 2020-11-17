@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Notifications API</title>
+</head>
+<body>
+    <h1>Desktop Notifications API</h1>
+    <p>Code inspired by the <a href="https://www.youtube.com/watch?v=Jncoj-Gvh9o">How to show Desktop Notifications - JavaScript Notification API Tutorial</a> tutorial.</p>
+    <script>
+        if ( Notification ){ // <- Check if the Notification API is supported on our browser
+
+            function showNotification(){
+
+                const notification = new Notification( "New message from SHA!", {
+
+                    body: "Congratulations! Your code has been reviewed.",
+                    icon: "./logo.png"
+
+                });
+
+                notification.addEventListener("click", (e)=>{
+                    window.location.href = "https://athena.socialhackersacademy.org";
+                });
+
+            }
+
+            const permission = Notification.permission; // Can be: default, granted, denied
+
+            console.log( permission ); 
+
+            if ( permission === "granted" ){
+
+                console.log("We have permission!");
+
+                showNotification();
+
+            } else if ( permission === "default" ){
+
+                Notification.requestPermission().then( reqPerm => {
+
+                    console.log( reqPerm );
+
+                });
+
+            }
+
+        }
+    </script>
+</body>
+</html>

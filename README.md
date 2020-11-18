@@ -50,18 +50,26 @@
     <h4>References</h4>
     <ul>
         <li>
-            <a href=""></a>
+            <a href="https://codepen.io/kostasx/full/pqvWPw">Visualizing Function Scope (hover over the functions to see each functions scope)</a>
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout">What does setTimeout returns?</a>
+        </li>
+        <li>
+            <a href="https://stackoverflow.com/questions/3968593/how-can-i-set-multiple-css-styles-in-javascript#answer-3968772">How to apply multiple inline styles using the .style property?</a>
         </li>
     </ul>
+    <!--
     <h4>Resources</h4>
     <ul>
         <li>
             <a href=""></a>
         </li>
     </ul>
+    -->
     <h4>Exercises</h4>
     <ul>
-        <li><a href="/JavaScript/"></a></li>
+        <li><a href="/JavaScript/Algorithmic-Thinking/README.md">Exercises</a></li>
     </ul>
     <hr>
     <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>

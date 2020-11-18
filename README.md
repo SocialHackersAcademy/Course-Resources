@@ -2,6 +2,72 @@
 
 ### LIVE SESSIONS
 
+<!-- DD/MM/YYYY -->
+<!--
+<details id="live-session-DD/MM/YYYY">
+    <br>
+    <summary>Live Session: TITLE (DD/MM/YYYY)</summary>
+    <p>Recorded on: DD/MM/YYYY</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>Code</h4>
+    <ul>
+        <li><a href="/JavaScript/"></a></li>
+    </ul>
+    <h4>References</h4>
+    <ul>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <h4>Exercises</h4>
+    <ul>
+        <li><a href="/JavaScript/"></a></li>
+    </ul>
+    <hr>
+    <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
+</details> 
+-->
+
+<!-- 18/11/2020 -->
+<details id="live-session-18/11/2020">
+    <br>
+    <summary>Live Session: DOM Lists, Scope and Algorithmic Thinking with stock prices (18/11/2020)</summary>
+    <p>Recorded on: 18/11/2020</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>Code</h4>
+    <ul>
+        <li><a href="/JavaScript/Algorithmic-Thinking/DOM-Lists.html">Working with DOM Lists</a></li>
+        <li><a href="/JavaScript/Algorithmic-Thinking/scope.js">Scope, Global and Local variables</a></li>
+        <li><a href="/JavaScript/Algorithmic-Thinking/stock-prices.html">Working with stock prices (HTML)</a></li>
+        <li><a href="/JavaScript/Algorithmic-Thinking/stock-prices.js">Working with stock prices (JS)</a></li>
+    </ul>
+    <h4>References</h4>
+    <ul>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <h4>Exercises</h4>
+    <ul>
+        <li><a href="/JavaScript/"></a></li>
+    </ul>
+    <hr>
+    <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
+</details> 
+
+<!-- 11/11/2020 -->
 <details id="live-session-11.11.2020">
     <br>
     <summary>Live Session: Timing & Randomness in JavaScript (11/11/2020)</summary>

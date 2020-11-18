@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+		<div id="app">First</div>
+		<div>Second</div>
+		<section class="some">One</section>
+		<div class="some">Two</div>
+
+    <script>
+			// Work on single elements
+			const app1 = document.querySelector("#app"); // (".class"), ("h1") // returns single value
+			const app2 = document.getElementById('app'); // returns single value
+
+			// Work on multiple elements
+			// Return HTMLCollection
+			document.getElementsByTagName("div"); 	 // returns [ LIST OF VALUES ]
+			const some = document.getElementsByClassName("some"); // returns [ LIST OF VALUES ]
+			// How can I run some code on all the elements with class .some?
+			// A) 
+			// some[0].style.color = "red";
+			// some[1].style.color = "red";
+			// B)
+			for ( let i = 0; i < some.length; i++ ){
+				some[i].style.color = "orange";
+				some[i].textContent =  ( i + 1 ) + ") " + some[i].textContent;
+			}
+
+			// Returns: NodeList
+			const divs = document.querySelectorAll(".some");		     // returns [ LIST OF VALUES  ]
+			for ( let i = 0; i < divs.length; i++ ){
+				// some[i].style.border = "5px solid black";
+				// some[i].style.margin = "5px";
+				// some[i].style.padding = "5px";
+				
+				// some[i].style.cssText = "border: 5px solid black; margin: 5px; padding: 5px";
+				some[i].style.cssText += "border: 5px solid black; margin: 5px; padding: 5px";
+			}
+			
+			
+			
+
+    </script>
+  </body>
+</html>

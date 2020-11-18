@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+</head>
+<style>
+    .graph {
+        box-sizing: border-box;
+        border: 2px solid;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 20px 0 20px;
+    }
+    
+    .bar {
+        width: 25px;
+        background: skyblue;
+        height: 50px;
+        border: 2px solid darkblue;
+        margin-left: 10px;
+        transition: all 1s ease;
+        /* CHECK */
+    }
+    
+    .bar:nth-child(2) {
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div id="app"></div>
+
+    <div class="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <script src="stock-prices.js">
+    </script>
+</body>
+
+</html>

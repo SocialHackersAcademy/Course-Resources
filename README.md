@@ -170,10 +170,6 @@
         <li>GitHub Workflow in a team environment</li>
         <li>CSS: border-radius</li>
     </ul>
-    <h4>Code</h4>
-    <ul>
-        <li><a href="/JavaScript/"></a></li>
-    </ul>
     <h4>References</h4>
     <ul>
         <li>

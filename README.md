@@ -155,6 +155,51 @@
     <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
 </details> 
 
+<!-- 14/10/2020 -->
+<details id="live-session-14/10/2020">
+    <br>
+    <summary>Live Session: Flexbox Hands on with GitHub (14/10/2020)</summary>
+    <p>Recorded on: 14/10/2020</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>Learning Objectives</h4>
+    <ul>
+        <li>Loading Google Fonts</li>
+        <li>Using the form and the input radio element</li>
+        <li>Using Flexbox</li>
+        <li>Centering block elements using margin: 0 auto;</li>
+        <li>GitHub Workflow in a team environment</li>
+        <li>CSS: border-radius</li>
+    </ul>
+    <h4>Code</h4>
+    <ul>
+        <li><a href="/JavaScript/"></a></li>
+    </ul>
+    <h4>References</h4>
+    <ul>
+        <li>
+            Pretty log output in git: <code>git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" -7</code>
+        </li>
+        <li>Console shortcuts for clearing line/console: <code>Ctrl+l, Ctrl+U</code></li>
+        <li>
+            <a href="https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add">What is the difference between git add -A and git add . ?</a>
+        </li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+        <li>
+            <a href="https://github.com/SocialHackersAcademy/CSS-Exercise-Recreate-PowerUps">GitHub Repository</a>
+        </li>
+        <li>
+            <a href="https://www.sitepoint.com/getting-started-git-team-environment/#resolving-conflicts">Resolving Conflicts in git</a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <hr>
+    <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
+</details> 
+
 ### YOUTUBE CHANNELS
 
 - [Net Ninja](https://www.youtube.com/c/TheNetNinja/videos)

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        border: 4px solid red;
+        padding: 5px;
+        background: tomato;
+        margin: 0;
+        height: 100vh;
+      }
+      .parent {
+        background: orange;
+        padding: 15px;
+        border: 4px solid darkorange;
+        margin-top: 20px;
+        width: 80%;
+      }
+      .child {
+        background: yellowgreen;
+        padding: 15px;
+        width: 200px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    BODY
+    <div class="parent">
+      PARENT
+      <article class="child">CHILD</article>
+    </div>
+    <script>
+      const child = document.querySelector(".child");
+      console.log(child);
+      // addEventListener, gets triggered on the
+      // Bubbling phase by default:
+      document.body.addEventListener(
+        "click",
+        function (event) {
+          // Is the target same as the document.body?
+          console.log("body clicked"); // event.type, event.shiftKey
+          // console.log( event.target, event.target === document.body );
+          if (event.target === event.currentTarget) {
+            // event.currentTarget === ELEMENT in ELEMENT.addEventListener
+            console.log("body was the target");
+          }
+        },
+        { capture: true }
+      ); // false == { capture: false }
+      child.addEventListener("click", function (e) {
+        // e.currentTarget === child
+        console.log("child clicked!");
+        // e.stopPropagation();
+      });
+      // Try to avoid this syntax:
+      // child.onclick = function(e){}
+      // <div onclick="someFunction(event)" onmouseenter="run(e)">
+      const parent = document.querySelector(".parent");
+      let some;
+      some = 1;
+      some = 2;
+      /*
+parent.onclick = function(e){
+  // e.currentTarget === parent
+  console.log("Parent 1");
+}
+// This will replace the previous value of onclick!
+parent.onclick = function(e){
+  console.log("Parent 2");
+}
+*/
+      // EL.addEventListener( EVENT, CALLBACK, OPTIONS )
+      /*
+parent.addEventListener("click", function(){
+  console.log("Parent 2");
+});
+parent.addEventListener(
+  "click", 
+  function(){
+    console.log("Parent 1");
+  },
+  // { options } or Boolean: useCapture
+  {
+    once: true, // Just run the handler once and remove the listener
+    capture: false
+  }
+);
+*/
+    </script>
+  </body>
+</html>

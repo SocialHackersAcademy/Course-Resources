@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <button>Click</button>
+
+    <script>
+      // BLOCKING CODE / SYNCHRONOUS CODE
+      // alert("ANNOYING CUSTOMER");
+      console.log("CLIENT X");
+      function show() {
+        console.log("Display Special Offer");
+      }
+
+      // Async Commands: fetch(), setTimeout(), setInterval(), addEventListener()
+      setTimeout(show, 10000); // Wait for 10" --> show();
+      // setInterval( callback, 1000 );
+      document.querySelector("button").addEventListener("click", function () {
+        alert("clicked!");
+      });
+
+      // A good indicator of whether a command is async, is that
+      // it accepts a function (callback) as an argument:
+      // connectToServer( someFunction );
+      // connectToServer( function(){ ... } );
+
+      console.log("Show News");
+      console.log("Show Weather");
+
+      // After 10", the callback gets executed...
+    </script>
+  </body>
+</html>

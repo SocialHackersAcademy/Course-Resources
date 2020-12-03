@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+}
+body {
+  background: #a2bec5;
+}
+.container {
+  max-width: 350px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: #1b3861;
+  box-shadow: 0.25em 0.25em 0.5em #333333;
+}
+.game-container {
+  width: 92%;
+  margin: 0.8em auto;
+  border: 0.15em solid #ecba1d;
+}
+.game-container h1 {
+  text-align: center;
+  margin: 0.4em 0.2em 0 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ecba1d;
+  font-family: 'Great Vibes', cursive;
+  background: #1b3861;
+}
+.questions-container {
+  width: 100%;
+  background: white;
+  margin: 1em auto 0;
+}
+.category {
+  height: 1em;
+  color: white;
+  padding: 0.2em 1.2em 1.3em;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.category.blue {
+  background: #72aae7;
+}
+.question {
+  background: #ddd;
+  padding: 0.7em 2em;
+}
+.options > li {
+  padding: 0.9em 2em;
+  color: #777;
+}
+.options > li:hover {
+  color: #111;
+  cursor: pointer;
+}

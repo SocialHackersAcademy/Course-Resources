@@ -34,6 +34,32 @@
 </details> 
 -->
 
+<!-- 02/12/2020 -->
+<details id="live-session-02/12/2020">
+    <br>
+    <summary>Live Session - Asynchronous Code and Browser Events in JavaScript (02/12/2020)</summary>
+    <p>Recorded on: 02/12/2020</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>Code</h4>
+    <ul>
+        <li>
+            <a href="/JavaScript/Async-Code-and-Browser-Events">Code from the live session</a>
+        </li>
+    </ul>
+    <h4>References</h4>
+    <ul>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener at MDN</a>
+        </li>
+    </ul>
+    <h4>Exercises</h4>
+    <ul>
+        <li><a href="/JavaScript/Async-Code-and-Browser-Events/trivia-quiz">Exercise</a></li>
+    </ul>
+    <hr>
+    <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
+</details> 
+
 <!-- 18/11/2020 -->
 <details id="live-session-18/11/2020">
     <br>

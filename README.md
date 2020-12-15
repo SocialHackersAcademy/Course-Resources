@@ -37,7 +37,7 @@
 <!-- 02/12/2020 -->
 <details id="live-session-02/12/2020">
     <br>
-    <summary>Live Session - Asynchronous Code and Browser Events in JavaScript (02/12/2020)</summary>
+    <summary>Live Session (SEP2020-FE) - Asynchronous Code and Browser Events in JavaScript (02/12/2020)</summary>
     <p>Recorded on: 02/12/2020</p>
     <p>Presented by: <strong>Kostas Minaidis</strong></p>    
     <h4>Code</h4>
@@ -63,7 +63,7 @@
 <!-- 18/11/2020 -->
 <details id="live-session-18/11/2020">
     <br>
-    <summary>Live Session: DOM Lists, Scope and Algorithmic Thinking with stock prices (18/11/2020)</summary>
+    <summary>Live Session (SEP2020-FE): DOM Lists, Scope and Algorithmic Thinking with stock prices (18/11/2020)</summary>
     <p>Recorded on: 18/11/2020</p>
     <p>Presented by: <strong>Kostas Minaidis</strong></p>    
     <h4>Code</h4>
@@ -104,7 +104,7 @@
 <!-- 11/11/2020 -->
 <details id="live-session-11.11.2020">
     <br>
-    <summary>Live Session: Timing & Randomness in JavaScript (11/11/2020)</summary>
+    <summary>Live Session (SEP2020-FE): Timing & Randomness in JavaScript (11/11/2020)</summary>
     <p>Recorded on: 11/11/2020</p>
     <p>Presented by: <strong>Kostas Minaidis</strong></p>    
     <h4>Code</h4>
@@ -165,7 +165,7 @@
 <!-- 04/11/2020 -->
 <details id="js-array-and-string-methods">
     <br>
-    <summary>JavaScript: Array and String Methods (04/11/2020)</summary>
+    <summary>JavaScript (SEP2020-FE): Array and String Methods (04/11/2020)</summary>
     <p>Recorded on: 04/11/2020</p>
     <p>Presented by: <strong>Kostas Minaidis</strong></p>    
     <h4>Code</h4>
@@ -184,7 +184,7 @@
 <!-- 14/10/2020 -->
 <details id="live-session-14/10/2020">
     <br>
-    <summary>Live Session: Flexbox Hands on with GitHub (14/10/2020)</summary>
+    <summary>Live Session (SEP2020-FE): Flexbox Hands on with GitHub (14/10/2020)</summary>
     <p>Recorded on: 14/10/2020</p>
     <p>Presented by: <strong>Kostas Minaidis</strong></p>    
     <h4>Learning Objectives</h4>

@@ -1,7 +1,5 @@
 ## FRONT END WEB DEVELOPMENT COURSE
 
-### LIVE SESSIONS
-
 <!-- DD/MM/YYYY -->
 <!--
 <details id="live-session-DD/MM/YYYY">
@@ -33,6 +31,30 @@
     <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
 </details> 
 -->
+
+### LIVE SESSIONS - CLASS 13 (DEC2020-FE)
+
+<!-- 15.12.2020 -->
+<details id="live-session-15.12.2020">
+    <br>
+    <summary>Live Session: Welcoming Session & Introduction to the Course (15.12.2020)</summary>
+    <p>Recorded on: 15.12.2020</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>References</h4>
+    <ul>
+        <li>
+            <a href="https://www.cybersecurityeducationguides.org/a-brief-history-of-hacker-culture/">A Brief History of Hacker Culture</a>
+        </li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+        <li>
+            <a href="https://tomato-timer.com/">An online Pomodoro Timer</a>
+        </li>
+    </ul>
+</details> 
+
+### LIVE SESSIONS - CLASS 12 (SEP2020-FE)
 
 <!-- 02/12/2020 -->
 <details id="live-session-02/12/2020">

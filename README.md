@@ -54,6 +54,8 @@
     </ul>
 </details> 
 
+---
+
 ### LIVE SESSIONS - CLASS 12 (SEP2020-FE)
 
 <!-- 02/12/2020 -->

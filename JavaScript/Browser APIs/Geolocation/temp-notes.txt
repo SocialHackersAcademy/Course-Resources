@@ -1,0 +1,19 @@
+let lat;
+
+// !!! IS AN ASYNCHRONOUS FUNCTION !!!
+getCurrentPosition((success)=>{
+
+  // This is where getCurrentPosition finishes its execution
+  // We can only have access to position at this point in time...
+  lat = success.coords.latitude;
+
+});
+
+// setTimeout( CALLBACK, 1000 );
+// setInterval( CALLBACK, 1000 );
+// addEventListener( EVENT, CALLBACK );
+
+console.log( lat ); // This will get executed BEFORE the success
+
+
+

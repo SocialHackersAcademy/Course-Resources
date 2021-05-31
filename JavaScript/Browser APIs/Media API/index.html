@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			transition: background-color 3s ease;
+		}
+		#progress {
+			width: 200px;
+			height: 20px;
+			background: gray;
+		}
+		#current {
+			background: yellowgreen;
+			height: 20px;
+			width: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <audio src=""></audio> -->
+	<video controls poster="https://ounews.co/wp-content/uploads/2019/07/Man-on-the-moon-702x459.jpg" muted src="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8e/A11v_1094228.ogv/A11v_1094228.ogv.240p.vp9.webm"></video>
+	<button id="play">play</button> 
+	<button id="pause">pause</button>
+	<button id="delay">Play after 5 seconds</button>
+	<!-- EXERCISE (1): Make use of a single button to play and pause the video
+		while at the same time the content of the button gets updated: Play when paused
+		and Pause when playing...
+	-->
+	<button id="toggle">Play/Pause</button>
+	<button id="mid">Go to the middle of the film</button>
+	<!-- EXERCISE (2): Display the progress of the video in the element below, as the video is playing -->
+	<div id="progress">
+		<div id="current"></div>
+	</div>
+	<!-- EXERCISE (2.1): Also display the currentTime as a percentage -->
+	<div id="progress-percent">50%</div>
+
+	<input type="range" min=0 max=100 value=100 />
+
+	<script>
+		const play = document.getElementById('play');
+		const pause = document.getElementById('pause')
+		const delay = document.getElementById('delay');
+		const video = document.querySelector('video');
+		const input = document.querySelector("input");
+		function playVideo(){
+			console.log( video.currentTime );
+			video.play();
+		}
+		delay.addEventListener("click", function(){
+			setTimeout( playVideo, 5000 ); // 500ms === 5s
+		})
+		play.addEventListener("dbclick", playVideo );
+		play.addEventListener('click', playVideo );
+		pause.addEventListener('click', function(){
+			video.pause();	
+		});
+		// The 'change' event is related to: <input>, <select>, <textarea>
+		input.addEventListener("change",(event)=>{ // Try with the 'input'
+			console.log(event.currentTarget.value, input.value / 100);
+			video.volume = input.value / 100;
+		});
+		// TODO: Check the 'volumechange' event also on the video...
+
+		// Media API Events:
+		video.addEventListener("play", ()=>{
+			console.log("Play event triggered");
+			document.body.style.backgroundColor = "black";
+		});
+		video.addEventListener("pause",()=>{
+			console.log("Video paused");
+      document.body.style.backgroundColor = 'white';
+		});
+		video.addEventListener("ended",()=>{
+			console.log("Ended");
+		});
+
+		console.log( "(1)", video.duration ); // NaN
+		video.addEventListener("loadedmetadata",()=>{
+			// Use this event to have access to metadata like duration
+			console.log("loadedmetadata");
+		})
+		video.addEventListener("loadeddata",()=>{
+			// Use this event to have access to video data, like
+			// the case where we want to play() the video
+			console.log( "loadeddata", video.duration );	
+			document.getElementById("mid").addEventListener("click",()=>{
+				video.currentTime=video.duration/2;
+			})	
+		});
+		video.addEventListener("timeupdate",()=>{
+			console.log(video.currentTime);
+		});
+
+		// setTimeout(()=>{}, 1000 ); // Wait for the duration to load...
+
+	</script>
+
+</body>
+
+</html>

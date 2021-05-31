@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <meta name="description" content="Local Storage Material" />
+  </head>
+  <body>
+    <h1>All About Local Storage</h1>
+    <form>
+      <label for="firstname">First name</label>
+      <input type="text" id="firstname" name="firstname" />
+      <br />
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" name="lastname" /><br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea
+      ><br />
+      <button>Submit <strong>Now</strong></button>
+      <button id="clear-storage" type="button">Clear Storage</button>
+      <!-- <input type="submit" value="Send"> -->
+    </form>
+    <script>
+      // STEP BY STEP:
+      // 1) Do something when the user writes something on <textarea>:
+      // Event "input" -> EventListener
+      // 1.1) Get the textarea element and store in a variable
+      // 1.2) Add an Event Listener to the element on the "input" event
+      // 2) On reload, get the 'message' value from localStorage
+			// 3) Put this value into the textarea (userMsg.value) value property
+			
+			// Patrick suggests: 
+			// Create 3 functions that will be called inside the if statement
+			// Example: if ( localStorage ){ fun1(); fun2(); fun3(); }
+			// One for reading and displaying, another for clearing the localStorage
+			// and another one for storing the message. 
+
+			// On form submission clear the form and the localStorage
+			// 1) Listen for the 'submit' event on the <form> element
+			// 1.1) Get the form element
+			// 1.2) Add event listener on the form element
+			// 2) Clear the form
+			// 3) clear the localStorage
+			const formData = {
+				firstName: "",
+				lastName : "",
+				message  : ""
+			}
+			const firstEl = document.getElementById("firstname");
+			const lastEl  = document.getElementById("lastname");
+			const form = document.querySelector("form");
+			const clearBtn = document.getElementById("clear-storage");
+			const submitForm = (event)=>{
+				event.preventDefault();
+				form.reset();
+				localStorage.clear();
+			}
+
+			form.addEventListener("submit", submitForm );
+
+			// (1) PRACTICE: Complete the function. This function
+			// must save an Object to localStorage, containing the 
+			// values of the First name, Last name and message  
+			// input and textarea fields  
+			// TIPS: Objects must be JSON.stringify'ed in order to be
+			// saved to the localStorage and JSON.parse'd in order
+			// to be converted back to an Object
+			function handleChange( e ){
+				console.log(e.target.getAttribute("id"));
+				const id = e.target.getAttribute("id");
+				// 1) Read the userData from localStorage
+				// 1.1) Check if it exists and act accordingly
+				// 2) Convert the value to an object (from String)
+				// 3) Update the object property depending on the input
+				// userData[id], userData[id] = e.target.value
+				// 4) Convert to JSON string and store it
+				const strData = JSON.stringify({
+					[id]: e.target.value
+				});
+				console.log(strData);
+				localStorage.setItem("user-data", strData);
+			}
+
+      if (localStorage) {
+        console.log("localStorage enabled!", localStorage);
+
+				const userMsg = document.getElementById("message");
+        const storedMessage = localStorage.getItem("message");
+
+				userMsg.value = storedMessage;
+
+				firstEl.addEventListener("change", handleChange );
+				lastEl.addEventListener( "change", handleChange );
+
+				clearBtn.addEventListener("click", () => {
+          localStorage.clear();
+          console.log(localStorage.length);
+        });
+
+        userMsg.addEventListener("input", () => {
+          console.log(userMsg.value);
+          localStorage.setItem("message", userMsg.value);
+        }); //                       key      value
+        // localStorage.setItem("username", "Kostas");
+        // localStorage.setItem("lastname", "Minaidis");
+      }
+    </script>
+  </body>
+</html>

@@ -205,6 +205,44 @@
     <p><strong>Instructions:</strong> Fork this repo, create a branch for each exercise, work on the solution and make a Pull Request. Make sure to add your instructor(s) as collaborator(s) and mention them on the PRs.</p>
 </details> 
 
+<!-- 29/10/2020 -->
+<details id="live-session-29/10/2020">
+    <br>
+    <summary><a href="https://www.youtube.com/watch?v=N7onx7BAggk">Live Session (SEP2020-FE): JavaScript - Part 2 (29/10/2020)</a></summary>
+    <p>Recorded on: 29/10/2020</p>
+    <p>Presented by: <strong>Kostas Minaidis</strong></p>    
+    <h4>Learning Objectives</h4>
+    <ul>
+        <li>0:00 - 3:02 = Best practices and why</li>
+        <li>3:03 - 6:47 = Javascript Statements</li>
+        <li>6:48 - 17:23 = Basic data values in JS</li>
+        <li>17:24 - 33:44 = Our first JS statement - Basic Math Operations</li>
+        <li>33:45 - 45:29 = Precedence & Associativity</li>
+        <li>45:30 - 47:49 = Student's question about typeof in a variable</li>
+        <li>47:50 - 54:50 = Quiz time</li>
+        <li>54:51 - 59:47 = More examples with the remainder</li>
+        <li>59:48 - 1:00:53 = "Strings"</li>
+        <li>1:00:54 - 1:11:31 = Comments</li>
+        <li>1:11:32 - 1:14:36 = It's time to test our skills</li>
+        <li>1:14:37 - 1:21:47 = Time for students to solve the exercise</li>
+    </ul>
+    <!--
+    <h4>References</h4>
+    <ul>
+        <li>
+        </li>
+        <li>Console shortcuts for clearing line/console: <code>Ctrl+l, Ctrl+U</code></li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+        <li>
+        </li>
+    </ul>
+    -->
+    <hr>
+</details> 
+
+
 <!-- 14/10/2020 -->
 <details id="live-session-14/10/2020">
     <br>
@@ -260,4 +298,5 @@
 
 ### CONTRIBUTORS
 
+- [Vaia Paschopoulou](https://github.com/Vaia-Pasch)
 - [Cetin Cakiroglu](https://github.com/cetincakiroglu/)
